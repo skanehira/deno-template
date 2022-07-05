@@ -5,9 +5,13 @@ on:
       - main
     paths-ignore:
       - 'README.md'
+      - '.gitignore'
+      - 'LICENSE'
   pull_request:
     paths-ignore:
       - 'README.md'
+      - '.gitignore'
+      - 'LICENSE'
 jobs:
   lint:
     strategy:
