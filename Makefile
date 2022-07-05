@@ -8,6 +8,6 @@ coverage:
 test:
 	@deno test --allow-all --unstable
 
-.PHONY: update-deps
-update-deps:
+.PHONY: deps
+deps:
 	@udd deps.ts
