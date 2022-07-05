@@ -1,13 +1,13 @@
 .PHONY: coverage
 coverage:
-	@deno test --allow-all --unstable --coverage=cov
+	@deno test -A --unstable --coverage=cov
 	@deno coverage cov
 	@rm -rf cov
 
 .PHONY: test
 test:
-	@deno test --allow-all --unstable
+	@deno test -A --unstable
 
 .PHONY: deps
 deps:
-	@udd deps.ts
+	@deno run -A https://deno.land/x/udd@0.7.3/main.ts
